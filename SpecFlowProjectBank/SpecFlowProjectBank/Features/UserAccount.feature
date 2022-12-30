@@ -26,13 +26,13 @@ Scenario Outline:2. Create withdraw account in below limit
 	Then the result should be "200"
 	When the user create account for:
     | key   | value    |
-	| value | 100      |
+    | value | <value>  |
     | type  | withdraw |
 	Then the result should be "200"
 	Examples:
-	| id | value | 
-	| 1  | 89   |
-	| 2  | 90   |
+	| id | value |
+	| 1  | 10    |
+	| 2  | 9     |
     
 @positive
 Scenario Outline:3. Account creation
@@ -122,7 +122,7 @@ Scenario Outline:7. Validation for account balance
 	| 3  | 2             | 100          | 1              | 200.01        | 400          | The user cannot have less than 100 at anytime in his account |
 	| 4  | 1             | 200          | 2              | 50.01         | 400          | The user cannot have less than 100 at anytime in his account |
 	| 5  | 2             | 100          | 1              | 100           | 200          |                                                              |
-
+	| 6  | 2             | 50000        | 1              | 100           | 200          |                                                              |
 
 
    
