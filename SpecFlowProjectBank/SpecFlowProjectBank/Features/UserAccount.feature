@@ -122,7 +122,7 @@ Scenario Outline:7. Validation for account balance
 	| 3  | 2             | 100          | 1              | 200.01        | 400          | The user cannot have less than 100 at anytime in his account |
 	| 4  | 1             | 200          | 2              | 50.01         | 400          | The user cannot have less than 100 at anytime in his account |
 	| 5  | 2             | 100          | 1              | 100           | 200          |                                                              |
-	| 6  | 2             | 50000        | 1              | 100           | 200          |                                                              |
+	| 6  | 2             | 5000        | 1              | 100           | 200          |                                                              |
 
 
    
